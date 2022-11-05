@@ -63,8 +63,9 @@ p {
   display: block;
 }
 .header .container nav.open--nav .side-menu {
-  right: 0;
   opacity: 1;
+  height: 100vh;
+  top: 0;
 }
 
 .main .cover .mobile {
@@ -229,15 +230,15 @@ p {
 
   .header .container nav .side-menu {
     opacity: 0;
-    transition: all 1s;
+    height: 0;
+    transition: all 0.3s;
     position: absolute;
-    height: 100vh;
     width: 80%;
     color: #222;
     background-color: white;
     padding: 10px;
-    top: 0;
-    right: -80%;
+    top: 50px;
+    right: 0;
     z-index: 2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
